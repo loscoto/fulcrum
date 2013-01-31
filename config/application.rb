@@ -50,10 +50,12 @@ module Fulcrum
     # Do not initialize the whole Rails stack when precompiling assets
     config.assets.initialize_on_precompile = false
 
+
     load Rails.root.join('config','fulcrum_defaults.rb')
     if File.exist?(Rails.root.join('config', 'fulcrum.rb'))
       load Rails.root.join('config','fulcrum.rb')
     end
     config.fulcrum = ::Configuration.for 'fulcrum'
+
   end
 end

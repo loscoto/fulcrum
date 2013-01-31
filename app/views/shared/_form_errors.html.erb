@@ -1,5 +1,7 @@
-<div id="error_explanation">
+
+<div id="error_explanation" class="alert alert-block alert-error">
   <h2><%= t('errors.template.header', :count => object.errors.count, :model => object.class.name.humanize) %></h2>
+
 
   <ul>
   <% object.errors.full_messages.each do |msg| %>
