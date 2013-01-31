@@ -51,8 +51,6 @@ GEM
       sass (~> 3.1)
     compass-rails (1.0.1)
       compass (~> 0.12.0)
-    compass-rails (1.0.3)
-      compass (>= 0.12.2, < 0.14)
     configuration (1.3.2)
     database_cleaner (0.7.1)
     devise (2.0.4)
@@ -96,9 +94,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
+    mysql (2.9.0)
     nokogiri (1.5.2)
     orm_adapter (0.0.6)
-    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.3)
     rack-cache (1.2)
@@ -139,8 +137,6 @@ GEM
       railties (>= 3.0)
       rspec (~> 2.9.0)
     rubyzip (0.9.6.1)
-    rubyzip (0.9.9)
-    sass (3.1.17)
     sass (3.2.3)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -188,7 +184,7 @@ DEPENDENCIES
   i18n-js
   jasmine (= 1.1.0)
   jquery-rails
-  pg
+  mysql
   rails (~> 3.2.11)
   rspec-rails
   sass-rails (~> 3.2.0)
