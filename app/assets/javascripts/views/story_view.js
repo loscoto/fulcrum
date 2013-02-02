@@ -493,6 +493,7 @@ Fulcrum.StoryView = Fulcrum.FormView.extend({
     var $div            = $(div);
     var $controlWrapper = $(controlWrapper);
     $div.append(controlWrapper);
+    console.log(content);
     if (typeof content == 'function') {
       $div.addClass('unlabelled');
       content.call(this, controlWrapper);
@@ -500,7 +501,7 @@ Fulcrum.StoryView = Fulcrum.FormView.extend({
       $div.addClass(content.name || 'unlabelled');
       if (content.label) {
 
-        $div.prepend(this.label(content.name, content.label));
+        $div.prepend(this.label(content.name, content.name));
         $div.append('<br/>');
       }
       $controlWrapper.append(content.control);

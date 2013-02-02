@@ -1,6 +1,6 @@
 <% if (story.estimable()) { %>
 <div class="state-actions">
-  <form>
+  <form class="btn-group">
     <% _.each(story.point_values(), function(value) { %>
     <input type="button" class="btn btn-mini estimate" value="<%= value %>"/>
     <% }); %>
