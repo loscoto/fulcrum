@@ -22,7 +22,7 @@ gem 'fastercsv', '1.5.3', :platforms => :ruby_18
 # (using standard csv lib if ruby version is 1.9)
 
 group :production do
-  gem 'mysql'
+  gem 'mysql2'
   gem 'pg'
 end
 
